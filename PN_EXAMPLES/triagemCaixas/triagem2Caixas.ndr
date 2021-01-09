@@ -1,0 +1,115 @@
+t 185.0 165.0 t2 0 w n
+t 525.0 125.0 t13 0 w n
+t 685.0 345.0 t5 0 w n
+p 25.0 245.0 p0 1 n inicio s
+t 65.0 245.0 t0 0 w n
+p 105.0 205.0 p1 1 s estEntParada n
+p 105.0 285.0 p2 0 n estEntOp w
+p 225.0 245.0 p3 1 n estClasParada ne
+t 185.0 325.0 t1 0 w n
+p 245.0 125.0 p5 0 n estClasTCxG ne
+p 245.0 365.0 p6 0 n estClasTCxP ne
+p 305.0 245.0 p4 1 n {B1aB2=0} ne
+t 345.0 125.0 t3 0 w n
+t 345.0 165.0 t10 0 w n
+t 345.0 365.0 t4 0 w n
+t 345.0 325.0 t9 0 w n
+p 405.0 245.0 p7 0 n {B1=1aB2=0} ne
+p 445.0 165.0 p9 0 n estClasTCxGP ne
+p 445.0 125.0 p8 0 n estClasTCxGG ne
+t 525.0 165.0 t12 0 w n
+p 445.0 365.0 p11 0 n estClasTCxPP ne
+t 525.0 365.0 t14 0 w n
+p 445.0 325.0 p10 0 n estClasTCxPG ne
+p 505.0 245.0 p12 0 n {B1aB2=1} ne
+t 525.0 325.0 t11 0 w n
+p 605.0 145.0 p13 0 n BlocElvG ne
+p 605.0 345.0 p15 0 n BlocElvP ne
+p 585.0 245.0 p14 1 n BlocParado ne
+t 685.0 145.0 t6 0 w n
+p 725.0 105.0 p16 1 n {EstCxG Parada} ne
+t 765.0 145.0 t7 0 w n
+p 725.0 185.0 p17 0 n {EstCxG Op} ne
+p 725.0 305.0 p18 0 n {EstCxP Op} ne
+t 765.0 345.0 t8 0 w n
+p 725.0 385.0 p19 1 n {EstCxP Parada} ne
+e t6 p17 1 n
+e p16 t6 1 n
+e t7 p16 1 n
+e p17 t7 1 n
+e t8 0.7379859432 119.3398508 p0 0.7978929428 151.8222645 1 n
+e t7 0.2678742754 133.8431918 p0 0.1713867895 162.4130537 1 n
+e t8 p19 1 n
+e p18 t8 1 n
+e t5 p18 1 n
+e p19 t5 1 n
+e t5 p14 1 n
+e t6 p14 1 n
+e p13 t6 1 n
+e p15 t5 1 n
+e t14 p15 1 n
+e t11 p15 1 n
+e p14 t14 1 n
+e p14 t11 1 n
+e p14 t13 1 n
+e p14 t12 1 n
+e t12 p13 1 n
+e t13 p13 1 n
+e p12 t13 1 n
+e p12 t12 1 n
+e p12 t11 1 n
+e p12 t14 1 n
+e t4 p12 1 n
+e t9 p12 1 n
+e t3 p12 1 n
+e t10 p12 1 n
+e p10 t11 1 n
+e t9 p10 1 n
+e p11 t14 1 n
+e t4 p11 1 n
+e p9 t12 1 n
+e t10 p9 1 n
+e p8 t13 1 n
+e t3 p8 1 n
+e p7 t10 1 n
+e p7 t3 1 n
+e t12 0.5935835209 36.05551275 p7 0.03141647909 35.6931366 1 n
+e t11 0.4064164791 36.05551275 p7 0.875 38.18376618 1 n
+e t14 0.375 42.42640687 p7 0.8058200867 43.65775991 1 n
+e p7 t4 1 n
+e p7 t9 1 n
+e t13 0.625 42.42640687 p7 0.188700279 39.92492956 1 n
+e t1 0.05550862922 58.52349955 p7 0.5580493486 58.87274412 1 n
+e t2 0.9444913708 58.52349955 p7 0.4774163824 49.49747468 1 n
+e t11 p5 1 n
+e t13 0.4052917279 78.49203781 p5 0.05064580855 89.49301649 1 n
+e t14 p6 1 n
+e t12 0.6577845395 96.79876032 p6 0.09871577163 86.02325267 1 n
+e p6 t9 1 n
+e p6 t4 1 n
+e t1 p6 1 n
+e p3 t1 1 n
+e p4 t1 1 n
+e t3 p1 1 n
+e t10 p1 1 n
+e t9 0.4580525051 65.2533524 p1 0.9262081912 67.08203932 1 n
+e t4 p1 1 n
+e p2 t10 1 n
+e p2 t4 1 n
+e p2 t9 1 n
+e t1 p2 1 n
+e p2 0.7835965475 28.63564213 t1 0.5242948952 26.30589288 1 n
+e p5 t3 1 n
+e p5 t10 1 n
+e t2 p5 1 n
+e p4 t2 1 n
+e p3 t2 1 n
+e p2 t3 1 n
+e t2 p2 1 n
+e p2 t2 1 n
+e t0 p2 1 n
+e p1 t0 1 n
+e p0 t0 1 n
+h triagem2Caixas small
+
+

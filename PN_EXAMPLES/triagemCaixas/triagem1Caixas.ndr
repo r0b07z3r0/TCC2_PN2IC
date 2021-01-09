@@ -1,0 +1,58 @@
+p 170.0 230.0 p1 1 s Est_Ent_Parada n
+p 170.0 350.0 p2 0 n Est_Ent_Op s
+t 250.0 230.0 t1 0 w n
+p 310.0 170.0 p3 0 s Est_Cl_G n
+t 390.0 170.0 t2 0 w n
+t 250.0 350.0 t3 0 w n
+p 310.0 290.0 p4 1 n Est_Cl_Parada e
+p 310.0 410.0 p5 0 n Est_Cl_P s
+t 390.0 410.0 t4 0 w n
+p 470.0 290.0 p7 1 n Bloc_Parado e
+p 470.0 170.0 p6 0 s Bloc_Gira_E_G n
+p 470.0 410.0 p8 0 n Bloc_Gira_E_P ne
+t 570.0 410.0 t7 0 w n
+t 570.0 170.0 t5 0 w n
+p 630.0 350.0 p11 0 s Est_Cx_P_Op n
+p 30.0 290.0 p0 1 n Inicio ne
+t 110.0 290.0 t0 0 w n
+p 630.0 470.0 p12 1 n Est_Cx_P_Parada w
+p 630.0 110.0 p9 1 n Est_Cx_G_Parada w
+p 630.0 230.0 p10 0 n Est_Cx_G_Op s
+t 690.0 170.0 t6 0 w n
+t 690.0 410.0 t8 0 w n
+e t6 0.25 160.0 p0 0.1987918088 189.7366596 1 n
+e p9 t5 1 n
+e t6 p9 1 n
+e p10 t6 1 n
+e t5 p10 1 n
+e t7 p7 1 n
+e t5 p7 1 n
+e p6 t5 1 n
+e t2 p6 1 n
+e p7 t2 1 n
+e t2 p4 1 n
+e p3 t2 1 n
+e t8 0.7500000002 154.0 p0 0.8006829318 191.6350699 1 n
+e p12 t7 1 n
+e t8 p12 1 n
+e p11 t8 1 n
+e t7 p11 1 n
+e p8 t7 1 n
+e t4 p8 1 n
+e p7 t4 1 n
+e t4 p4 1 n
+e p5 t4 1 n
+e t3 p5 1 n
+e p2 t3 1 n
+e p4 t3 1 n
+e p4 t1 1 n
+e t1 p3 1 n
+e t1 p1 1 n
+e t3 p1 1 n
+e p2 t1 1 n
+e t0 p2 1 n
+e p1 t0 1 n
+e p0 t0 1 n
+h triagem1Caixas
+
+
