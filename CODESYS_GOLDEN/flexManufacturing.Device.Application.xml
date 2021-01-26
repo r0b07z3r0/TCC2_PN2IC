@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="3.5.16.30" runtimeid="3.5.16.30" libversion="3.5.16.0" compiler="3.5.16.30" lmm="3.5.16.0" profile="CODESYS V3.5 SP16 Patch 3+" settings="SupportOPCUA, LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="flexManufacturing" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeUserDef name="T_F_TRIG" size="2" nativesize="16" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="F_TRIG">
+      <UserDefElement iecname="CLK" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="1" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_RS" size="3" nativesize="16" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="RS">
+      <UserDefElement iecname="SET" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="RESET1" type="T_BOOL" byteoffset="1" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q1" type="T_BOOL" byteoffset="2" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_R_TRIG" size="2" nativesize="16" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="R_TRIG">
+      <UserDefElement iecname="CLK" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="1" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_SFCStepType" size="16" nativesize="16" typeclass="Userdef" pouclass="STRUCTURE" iecname="SFCStepType">
+      <UserDefElement iecname="x" type="T_BOOL" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="t" type="T_TIME" byteoffset="4" vartype="VAR" />
+      <UserDefElement iecname="_x" type="T_BOOL" byteoffset="8" vartype="VAR" />
+      <UserDefElement iecname="_t" type="T_TIME" byteoffset="12" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_TON" size="16" nativesize="32" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="TON">
+      <UserDefElement iecname="IN" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="PT" type="T_TIME" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="8" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="ET" type="T_TIME" byteoffset="12" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_SFCActionControl" size="116" nativesize="272" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="SFCActionControl">
+      <UserDefElement iecname="N" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="R0" type="T_BOOL" byteoffset="1" vartype="VAR_INPUT" />
+      <UserDefElement iecname="S0" type="T_BOOL" byteoffset="2" vartype="VAR_INPUT" />
+      <UserDefElement iecname="L" type="T_BOOL" byteoffset="3" vartype="VAR_INPUT" />
+      <UserDefElement iecname="D" type="T_BOOL" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="P" type="T_BOOL" byteoffset="5" vartype="VAR_INPUT" />
+      <UserDefElement iecname="SD" type="T_BOOL" byteoffset="6" vartype="VAR_INPUT" />
+      <UserDefElement iecname="DS" type="T_BOOL" byteoffset="7" vartype="VAR_INPUT" />
+      <UserDefElement iecname="SL" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="T" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="16" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="S_FF" type="T_RS" byteoffset="17" vartype="VAR" />
+      <UserDefElement iecname="L_TMR" type="T_TON" byteoffset="20" vartype="VAR" />
+      <UserDefElement iecname="D_TMR" type="T_TON" byteoffset="36" vartype="VAR" />
+      <UserDefElement iecname="P_TRIG" type="T_R_TRIG" byteoffset="52" vartype="VAR" />
+      <UserDefElement iecname="SD_TMR" type="T_TON" byteoffset="56" vartype="VAR" />
+      <UserDefElement iecname="SD_FF" type="T_RS" byteoffset="72" vartype="VAR" />
+      <UserDefElement iecname="DS_FF" type="T_RS" byteoffset="75" vartype="VAR" />
+      <UserDefElement iecname="DS_TMR" type="T_TON" byteoffset="80" vartype="VAR" />
+      <UserDefElement iecname="SL_FF" type="T_RS" byteoffset="96" vartype="VAR" />
+      <UserDefElement iecname="SL_TMR" type="T_TON" byteoffset="100" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_SFCActionType" size="128" nativesize="288" typeclass="Userdef" pouclass="STRUCTURE" iecname="SFCActionType">
+      <UserDefElement iecname="x" type="T_BOOL" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="_x" type="T_BOOL" byteoffset="1" vartype="VAR" />
+      <UserDefElement iecname="t" type="T_TIME" byteoffset="4" vartype="VAR" />
+      <UserDefElement iecname="_t" type="T_TIME" byteoffset="8" vartype="VAR" />
+      <UserDefElement iecname="AC" type="T_SFCActionControl" byteoffset="12" vartype="VAR" />
+    </TypeUserDef>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="PLC_PRG">
+        <Node name="_CPS_ACT_PP" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_CPS_INBOX_F" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_CPS_INBOX_WARNINGL" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_CPS_TRANSFER_F" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_1_WARNINGL" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_BASE_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_BASE_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_BASE_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_BASE_3" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_LID_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_LID_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_LID_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_WS_3_CONV_PROD" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_1_ACT_M" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_1_ACT_PP_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_1_ACT_PP_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_1_ACT_RESET" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_3_ACT_PP_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_3_ACT_PP_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_3_ACT_PP_3" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_3_ACT_PP_4" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_3_ACT_RESET" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="BOX_INPUT" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="BOX_INPUT__to__BOX_WAIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="BOX_WAIT" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="CPS_PP" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="CPS_PP_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="CPS_PP_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="CPS_PP_TON" type="T_TON" access="ReadWrite" />
+        <Node name="FM_CPS_CONV_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_INBOX_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_INBOX_WARNINGL" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_OUT_WARNINGl" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_PP_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_TRANSFER_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_TRANSFER_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_CPS_TRANSFER_R" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_INPUT_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_INPUT_1_SENSOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_INPUT_1_WARNINGL" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_INPUT_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_INPUT_2_SENSOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_INPUT_2_WARNINGL" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_1_CONV_1_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_1_CONV_1_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_1_CONV_1_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_1_CONV_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_1_CONV_2_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_1_CONV_2_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_1_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_1_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_1_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_2_3_SENSOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_2_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_3_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_3_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_5_SENSOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_B_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_4_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_5_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_5_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_5_B_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_5_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_5_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_5_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_6_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_6_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_2_CONV_6_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_3_CONV_1_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_3_CONV_1_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_3_CONV_1_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_3_CONV_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_3_CONV_2_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_3_CONV_2_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_1_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_1_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_1_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_3_SENSOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_B_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_2_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_3_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_3_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_3_B_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_3_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_3_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_3_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_B_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_4_CONV_4_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_B_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_1_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_2_3_SENSOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_2_B_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_2_B_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_2_F_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_2_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_3_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_3_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_PALLET_5_CONV_3_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_M_BUSY" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_M_START" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_1_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_PP_2_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_1_WARNINGL" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_M_BUSY" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_M_START" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_1_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_PP_2_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_2_WARNINGL" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_BASE_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_BASE_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_BASE_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_BASE_3" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_BASE_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_LID_0" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_LID_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_LID_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_LID_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_PROD" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_CONV_PROD_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_1_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_2_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_3_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_DETECTED" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_GRAB" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_MOVINGX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_MOVINGZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_MOVX" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_MOVZ" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_ROTATING" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_ROTCCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_WS_3_PP_4_ROTCW" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_1_SENSOR_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_1_SENSOR_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_2_SENSOR_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_2_SENSOR_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_3_SENSOR_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_3_SENSOR_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_4_SENSOR_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_4_SENSOR_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Init" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="Init__to__Init" type="T_BOOL" access="ReadWrite" />
+        <Node name="Init_CPS" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="Init_CPS__to__CPS_PP" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_1_INIT" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_1_INIT__to__WS_1_PP_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_1_M" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_1_M__to__WS_1_PP_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_1_PP_1" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_1_PP_1__to__WS_1_M" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_1_PP_1_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_1_PP_1_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_1_PP_1_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_1_PP_2" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_1_PP_2__to__WS_1_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_1_PP_2_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_1_PP_2_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_1_PP_2_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_2_PP_1_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_2_PP_1_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_2_PP_1_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_2_PP_2_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_2_PP_2_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_2_PP_2_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_3_ASSEMBLY" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_ASSEMBLY__to__WS_3_CONV" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_BASE_CONV" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_BASE_CONV__to__WS_3_BASE_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_BASE_END" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_BASE_END__to__WS_3_ASSEMBLY" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_CONV" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_CONV__to__WS_3_PP_4" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_INIT" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_INIT__to__WS_3_PP_1_WAIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_LID_CONV" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_LID_CONV__to__WS_3_LID_END" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_LID_END" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_PP_1" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_PP_1__to__WS_3_BASE_CONV" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_PP_1_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_3_PP_1_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_3_PP_1_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_3_PP_1_WAIT" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_PP_1_WAIT__to__WS_3_PP_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_PP_2" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_PP_2__to__WS_3_LID_CONV" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_PP_2_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_3_PP_2_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_3_PP_2_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_3_PP_2_WAIT" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_PP_2_WAIT__to__WS_3_PP_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_PP_3_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_3_PP_3_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_3_PP_3_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_3_PP_4" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_PP_4__to__WS_3_RESET" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_PP_4_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_3_PP_4_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_3_PP_4_TON" type="T_TON" access="ReadWrite" />
+        <Node name="WS_3_RESET" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="WS_3_RESET__to__WS_3_INIT" type="T_BOOL" access="ReadWrite" />
+        <Node name="WS_3_RESET_FALLEDGE" type="T_F_TRIG" access="ReadWrite" />
+        <Node name="WS_3_RESET_STEP" type="T_INT" access="ReadWrite" />
+        <Node name="WS_3_RESET_TON" type="T_TON" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
