@@ -68,6 +68,10 @@
   <NodeList>
     <Node name="Application">
       <Node name="PLC_PRG">
+        <Node name="_AUTONET_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_AUTONET_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_AUTONET_3" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_AUTONET_4" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_CPS" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_CPS_ACT_PP" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_CPS_ACT_RESET" type="T_SFCActionType" access="ReadWrite" />
@@ -107,6 +111,38 @@
         <Node name="_FM_PALLET_3_CONV_1_F" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_FM_PALLET_3_CONV_2_B" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_FM_PALLET_3_CONV_2_F" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_1_B" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_1_F" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_2_B_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_2_B_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_2_B_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_2_F_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_2_F_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_2_F_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_3_B_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_3_B_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_3_B_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_3_F_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_3_F_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_3_F_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_4_B_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_4_B_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_4_B_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_4_F_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_4_F_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_4_CONV_4_F_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_1_B_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_1_B_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_1_B_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_1_F_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_1_F_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_1_F_2" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_2_B_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_2_B_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_2_F_0" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_2_F_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_3_B" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_FM_PALLET_5_CONV_3_F" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_FM_WS_1_WARNINGL" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_FM_WS_2_WARNINGL" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_FM_WS_3_CONV_BASE_0" type="T_SFCActionType" access="ReadWrite" />
@@ -118,13 +154,18 @@
         <Node name="_FM_WS_3_CONV_LID_2" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_FM_WS_3_CONV_PROD" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_INPUT_1_ACT" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_INPUT_2_ACT" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_PALLET_1" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_PALLET_2" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_PALLET_3" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_PALLET_4" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_PALLET_5" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_1" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_1_ACT_M" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_1_ACT_PP_1" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_1_ACT_PP_2" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_1_ACT_RESET" type="T_SFCActionType" access="ReadWrite" />
+        <Node name="_WS_2" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_2_ACT_M" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_2_ACT_PP_1" type="T_SFCActionType" access="ReadWrite" />
         <Node name="_WS_2_ACT_PP_2" type="T_SFCActionType" access="ReadWrite" />
@@ -335,14 +376,22 @@
         <Node name="FM_WS_3_PP_4_ROTATING" type="T_BOOL" access="ReadWrite" />
         <Node name="FM_WS_3_PP_4_ROTCCW" type="T_BOOL" access="ReadWrite" />
         <Node name="FM_WS_3_PP_4_ROTCW" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_1_SENSOR_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_1_SENSOR_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_2_SENSOR_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_2_SENSOR_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_3_SENSOR_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_3_SENSOR_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_4_SENSOR_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="FM_ZONE_4_SENSOR_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_1_SENSOR_P_1_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_1_SENSOR_P_1_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_1_SENSOR_P_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_1_SENSOR_P_2_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_2_SENSOR_P_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_2_SENSOR_P_2_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_2_SENSOR_P_3_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_2_SENSOR_P_3_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_3_SENSOR_P_2_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_3_SENSOR_P_2_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_3_SENSOR_P_4_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_3_SENSOR_P_4_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_4_SENSOR_P_4_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_4_SENSOR_P_4_F" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_4_SENSOR_P_5_B" type="T_BOOL" access="ReadWrite" />
+        <Node name="FM_ZONE_4_SENSOR_P_5_F" type="T_BOOL" access="ReadWrite" />
         <Node name="Init" type="T_SFCStepType" access="ReadWrite" />
         <Node name="Init__to__Init" type="T_BOOL" access="ReadWrite" />
         <Node name="Init_CPS" type="T_SFCStepType" access="ReadWrite" />
@@ -351,24 +400,13 @@
         <Node name="Init_INPUT_1_ACT__to__Step0_INPUT_1_ACT" type="T_BOOL" access="ReadWrite" />
         <Node name="Init_INPUT_2_ACT" type="T_SFCStepType" access="ReadWrite" />
         <Node name="Init_INPUT_2_ACT__to__Step0_INPUT_2_ACT" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_1_B_2" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_1_B_2__to__P_1_UNLOADED" type="T_BOOL" access="ReadWrite" />
         <Node name="P_1_CONV_1_END_F" type="T_F_TRIG" access="ReadWrite" />
         <Node name="P_1_CONV_2_END_F" type="T_F_TRIG" access="ReadWrite" />
         <Node name="P_1_EMPTY" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_1_EMPTY__to__P_1_B_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_1_F_1" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_1_F_1__to__P_1_F_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_1_F_2" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_1_F_2__to__P_1_EMPTY" type="T_BOOL" access="ReadWrite" />
         <Node name="P_1_LOADED" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_1_LOADED__to__P_1_F_1" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_1_UNLOADED" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_1_UNLOADED__to__P_1_LOADED" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_2_B_2" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_2_B_2__to__P_2_TO_LOAD" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_1_TO_LOAD" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_1_TO_LOAD__to__P_1_LOADED" type="T_BOOL" access="ReadWrite" />
         <Node name="P_2_B_3" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_2_B_3__to__P_2_B_2" type="T_BOOL" access="ReadWrite" />
         <Node name="P_2_B_4" type="T_SFCStepType" access="ReadWrite" />
         <Node name="P_2_B_4__to__P_2_B_3" type="T_BOOL" access="ReadWrite" />
         <Node name="P_2_B_5" type="T_SFCStepType" access="ReadWrite" />
@@ -386,33 +424,76 @@
         <Node name="P_2_F_3" type="T_SFCStepType" access="ReadWrite" />
         <Node name="P_2_F_3__to__P_2_F_4" type="T_BOOL" access="ReadWrite" />
         <Node name="P_2_F_4" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_2_F_4__to__P_2_F_5" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_2_F_5" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_2_F_5__to__P_2_F_6" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_2_F_6" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_2_F_6__to__P_2_EMPTY" type="T_BOOL" access="ReadWrite" />
         <Node name="P_2_LOADED" type="T_SFCStepType" access="ReadWrite" />
         <Node name="P_2_LOADED__to__P_2_F_1" type="T_BOOL" access="ReadWrite" />
         <Node name="P_2_TO_LOAD" type="T_SFCStepType" access="ReadWrite" />
         <Node name="P_2_TO_LOAD__to__P_2_LOADED" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_3_B_2" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_3_B_2__to__P_3_TO_LOAD" type="T_BOOL" access="ReadWrite" />
         <Node name="P_3_CONV_1_END_F" type="T_F_TRIG" access="ReadWrite" />
         <Node name="P_3_EMPTY" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_3_EMPTY__to__P_3_B_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_3_F_1" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_3_F_1__to__P_3_F_2" type="T_BOOL" access="ReadWrite" />
-        <Node name="P_3_F_2" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_3_F_2__to__P_3_EMPTY" type="T_BOOL" access="ReadWrite" />
         <Node name="P_3_LOADED" type="T_SFCStepType" access="ReadWrite" />
-        <Node name="P_3_LOADED__to__P_3_F_1" type="T_BOOL" access="ReadWrite" />
         <Node name="P_3_TO_LOAD" type="T_SFCStepType" access="ReadWrite" />
         <Node name="P_3_TO_LOAD__to__P_3_LOADED" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_4_B_3" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_B_4" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_B_4__to__P_4_B_3" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_4_EMPTY" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_EMPTY__to__P_4_B_4" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_4_F_1" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_F_1__to__P_4_F_2" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_4_F_2" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_LOADED" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_LOADED__to__P_4_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_4_TO_LOAD" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_4_TO_LOAD__to__P_4_LOADED" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_5_B_3" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_5_EMPTY" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_5_EMPTY__to__P_5_B_3" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_5_F_1" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_5_LOADED" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_5_LOADED__to__P_5_F_1" type="T_BOOL" access="ReadWrite" />
+        <Node name="P_5_TO_LOAD" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="P_5_TO_LOAD__to__P_5_LOADED" type="T_BOOL" access="ReadWrite" />
+        <Node name="S0" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S0__to__S1" type="T_BOOL" access="ReadWrite" />
+        <Node name="S1" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S1__to__S0" type="T_BOOL" access="ReadWrite" />
+        <Node name="S2" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S2__to__S3" type="T_BOOL" access="ReadWrite" />
+        <Node name="S3" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S3__to__S2" type="T_BOOL" access="ReadWrite" />
+        <Node name="S4" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S4__to__S5" type="T_BOOL" access="ReadWrite" />
+        <Node name="S5" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S5__to__S4" type="T_BOOL" access="ReadWrite" />
+        <Node name="S6" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S6__to__S7" type="T_BOOL" access="ReadWrite" />
+        <Node name="S7" type="T_SFCStepType" access="ReadWrite" />
+        <Node name="S7__to__S6" type="T_BOOL" access="ReadWrite" />
         <Node name="Step0_CPS" type="T_SFCStepType" access="ReadWrite" />
         <Node name="Step0_INPUT_1_ACT" type="T_SFCStepType" access="ReadWrite" />
         <Node name="Step0_INPUT_1_ACT__to__Init_INPUT_1_ACT" type="T_BOOL" access="ReadWrite" />
         <Node name="Step0_INPUT_2_ACT" type="T_SFCStepType" access="ReadWrite" />
         <Node name="Step0_INPUT_2_ACT__to__Init_INPUT_2_ACT" type="T_BOOL" access="ReadWrite" />
+        <Node name="T10_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T11_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T12_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T13_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T14_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T15_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T16_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T17_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T18_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T19_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T1_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T20_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T2_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T3_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T4_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T5_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T6_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T7_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T8_TRIG" type="T_R_TRIG" access="ReadWrite" />
+        <Node name="T9_TRIG" type="T_R_TRIG" access="ReadWrite" />
         <Node name="TR_T10" type="T_BOOL" access="ReadWrite" />
         <Node name="TR_T11" type="T_BOOL" access="ReadWrite" />
         <Node name="TR_T14" type="T_BOOL" access="ReadWrite" />
